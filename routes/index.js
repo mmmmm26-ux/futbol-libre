@@ -3,16 +3,22 @@ const router = express.Router();
 
 const partidos = [
   {
-    equipoA: "Ejemplo FC",
-    equipoB: "Real Esperanza",
-    hora: "6:00 PM",
-    link: "https://www.youtube.com/embed/live_stream?channel=UC4a-Gbdw7vOaccHmFo40b9g" // Al Jazeera - funcional
+    equipoA: "ESPN",
+    equipoB: "",
+    hora: "Canal en vivo",
+    link: "https://tv.latv-hd.com/canal/espn.php"
   },
   {
-    equipoA: "Luz Interior",
-    equipoB: "Sombra Eterna",
-    hora: "8:00 PM",
-    link: "https://www.youtube.com/embed/live_stream?channel=UCJjSDX-jUChzOEyok9XYRJQ" // NASA TV - prueba
+    equipoA: "TUDN",
+    equipoB: "",
+    hora: "Canal en vivo",
+    link: "https://tv.latv-hd.com/canal/tudn.php"
+  },
+  {
+    equipoA: "DIRECTV Sports",
+    equipoB: "",
+    hora: "Canal en vivo",
+    link: "https://tv.latv-hd.com/canal/directv.php"
   }
 ];
 
