@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fútbol Libre TV</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Fútbol Libre TV</h1>
+  </header>
+
+  <main>
+    <% partidos.forEach(p => { %>
+      <div class="partido">
+        <h2><%= p.equipoA %> vs <%= p.equipoB %></h2>
+        <p><strong>Hora:</strong> <%= p.hora %></p>
+        <iframe src="<%= p.link %>" allowfullscreen></iframe>
+      </div>
+    <% }); %>
+  </main>
+</body>
+</html>
