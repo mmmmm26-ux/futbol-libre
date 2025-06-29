@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// ⚠ Enlaces FUNCIONALES estilo Fútbol Libre (actualizados)
 const partidos = [
   {
     equipoA: "Colombia",
