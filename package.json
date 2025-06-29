@@ -1,7 +1,6 @@
 {
   "name": "futbol-libre",
   "version": "1.0.0",
-  "description": "Transmisión estilo Fútbol Libre",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
