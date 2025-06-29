@@ -1,21 +1,30 @@
-body {
-  background: #000;
-  color: #fff;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background: #111;
-  padding: 20px;
-  text-align: center;
-}
-.partido {
-  padding: 20px;
-  border-bottom: 1px solid #333;
-}
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-}
+const express = require('express');
+const router = express.Router();
+
+// ⚠ Enlaces FUNCIONALES estilo Fútbol Libre (actualizados)
+const partidos = [
+  {
+    equipoA: "Colombia",
+    equipoB: "Uruguay",
+    hora: "6:00 PM",
+    link: "https://latv-hd.com/canal/tyc.php"
+  },
+  {
+    equipoA: "Chile",
+    equipoB: "Paraguay",
+    hora: "8:30 PM",
+    link: "https://latv-hd.com/canal/espn.php"
+  },
+  {
+    equipoA: "Perú",
+    equipoB: "Venezuela",
+    hora: "10:00 PM",
+    link: "https://latv-hd.com/canal/directv.php"
+  }
+];
+
+router.get('/', (req, res) => {
+  res.render('index', { partidos });
+});
+
+module.exports = router;
