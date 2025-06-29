@@ -1,30 +1,23 @@
-const express = require('express');
-const router = express.Router();
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fútbol Libre TV</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>📺 Fútbol Libre TV</h1>
+  </header>
 
-// ⚠ Enlaces FUNCIONALES estilo Fútbol Libre (actualizados)
-const partidos = [
-  {
-    equipoA: "Colombia",
-    equipoB: "Uruguay",
-    hora: "6:00 PM",
-    link: "https://latv-hd.com/canal/tyc.php"
-  },
-  {
-    equipoA: "Chile",
-    equipoB: "Paraguay",
-    hora: "8:30 PM",
-    link: "https://latv-hd.com/canal/espn.php"
-  },
-  {
-    equipoA: "Perú",
-    equipoB: "Venezuela",
-    hora: "10:00 PM",
-    link: "https://latv-hd.com/canal/directv.php"
-  }
-];
-
-router.get('/', (req, res) => {
-  res.render('index', { partidos });
-});
-
-module.exports = router;
+  <main>
+    <% partidos.forEach(p => { %>
+      <div class="partido">
+        <h2><%= p.equipoA %> vs <%= p.equipoB %></h2>
+        <p><strong>Hora:</strong> <%= p.hora %></p>
+        <iframe src="<%= p.link %>" allowfullscreen loading="lazy"></iframe>
+      </div>
+    <% }); %>
+  </main>
+</body>
+</html>
