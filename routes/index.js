@@ -1,18 +1,25 @@
 const express = require('express');
 const router = express.Router();
 
+// ⚠ Enlaces FUNCIONALES estilo Fútbol Libre (actualizados)
 const partidos = [
   {
-    equipoA: "Argentina",
-    equipoB: "Brasil",
+    equipoA: "Colombia",
+    equipoB: "Uruguay",
     hora: "6:00 PM",
-    link: "https://www.youtube.com/embed/live_stream?channel=UCXXXX"
+    link: "https://latv-hd.com/canal/tyc.php"
   },
   {
-    equipoA: "Real Madrid",
-    equipoB: "Barcelona",
-    hora: "8:00 PM",
-    link: "https://www.youtube.com/embed/live_stream?channel=UCYYYY"
+    equipoA: "Chile",
+    equipoB: "Paraguay",
+    hora: "8:30 PM",
+    link: "https://latv-hd.com/canal/espn.php"
+  },
+  {
+    equipoA: "Perú",
+    equipoB: "Venezuela",
+    hora: "10:00 PM",
+    link: "https://latv-hd.com/canal/directv.php"
   }
 ];
 
