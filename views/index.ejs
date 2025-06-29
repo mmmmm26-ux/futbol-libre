@@ -11,13 +11,13 @@
   </header>
 
   <main>
-    <% partidos.forEach(p => { %>
-      <div class="partido">
-        <h2><%= p.equipoA %> vs <%= p.equipoB %></h2>
-        <p><strong>Hora:</strong> <%= p.hora %></p>
-        <iframe src="<%= p.link %>" allowfullscreen loading="lazy"></iframe>
-      </div>
-    <% }); %>
+   <% partidos.forEach(p => { %>
+  <div class="partido">
+    <h2><%= p.equipoA %> <%= p.equipoB ? 'vs ' + p.equipoB : '' %></h2>
+    <p><strong>Hora:</strong> <%= p.hora %></p>
+    <a class="ver-btn" href="<%= p.link %>" target="_blank">Ver Canal 🔗</a>
+  </div>
+<% }); %>
   </main>
 </body>
 </html>
