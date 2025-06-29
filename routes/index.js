@@ -6,19 +6,19 @@ const partidos = [
     equipoA: "ESPN",
     equipoB: "",
     hora: "Canal en vivo",
-    link: "https://tv.latv-hd.com/canal/espn.php"
+    link: "https://www.futbollibretv.co/espn-en-vivo/"
   },
   {
     equipoA: "TUDN",
     equipoB: "",
     hora: "Canal en vivo",
-    link: "https://tv.latv-hd.com/canal/tudn.php"
+    link: "https://www.futbollibretv.co/tudn-en-vivo/"
   },
   {
     equipoA: "DIRECTV Sports",
     equipoB: "",
     hora: "Canal en vivo",
-    link: "https://tv.latv-hd.com/canal/directv.php"
+    link: "https://www.futbollibretv.co/directv-sports-en-vivo/"
   }
 ];
 
@@ -27,3 +27,4 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
+
